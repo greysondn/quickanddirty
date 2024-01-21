@@ -66,49 +66,49 @@ def doMove(stones, pit, player):
 def printBoard(stones, pl1, pl2):
 
     line1 = ""
-    line1 = line1 + "*    * "
+    line1 = line1 + "█    █ "
     line1 = line1 + str(stones[12]).rjust(2)
-    line1 = line1 + " * "
+    line1 = line1 + " █ "
     line1 = line1 + str(stones[11]).rjust(2)
-    line1 = line1 + " * "
+    line1 = line1 + " █ "
     line1 = line1 + str(stones[10]).rjust(2)
-    line1 = line1 + " * "
+    line1 = line1 + " █ "
     line1 = line1 + str(stones[9]).rjust(2)
-    line1 = line1 + " * "
+    line1 = line1 + " █ "
     line1 = line1 + str(stones[8]).rjust(2)
-    line1 = line1 + " * "
+    line1 = line1 + " █ "
     line1 = line1 + str(stones[7]).rjust(2)
-    line1 = line1 + " *    *"
+    line1 = line1 + " █    █"
    
     line2 = ""
-    line2 = line2 + "*    * "
+    line2 = line2 + "█    █ "
     line2 = line2 + str(stones[0]).rjust(2)
-    line2 = line2 + " * "
+    line2 = line2 + " █ "
     line2 = line2 + str(stones[1]).rjust(2)
-    line2 = line2 + " * "
+    line2 = line2 + " █ "
     line2 = line2 + str(stones[2]).rjust(2)
-    line2 = line2 + " * "
+    line2 = line2 + " █ "
     line2 = line2 + str(stones[3]).rjust(2)
-    line2 = line2 + " * "
+    line2 = line2 + " █ "
     line2 = line2 + str(stones[4]).rjust(2)
-    line2 = line2 + " * "
+    line2 = line2 + " █ "
     line2 = line2 + str(stones[5]).rjust(2)
-    line2 = line2 + " *    *"
+    line2 = line2 + " █    █"
             
-    lineM = "* " +             str(stones[13]).rjust(2) +             " ******************************* " +             str(stones[6]).rjust(2) +             " *"
+    lineM = "█ " +             str(stones[13]).rjust(2) +             " ███████████████████████████████ " +             str(stones[6]).rjust(2) +             " █"
 
     print(pl2.ljust(41))
-    print("*****************************************")
-    print("*    *    *    *    *    *    *    *    *")
-    print("*    *  L *  K *  J *  I *  H *  G *    *")
+    print("█████████████████████████████████████████")
+    print("█    █    █    █    █    █    █    █    █")
+    print("█    █  L █  K █  J █  I █  H █  G █    █")
     print(line1)
-    print("*    *    *    *    *    *    *    *    *")
+    print("█    █    █    █    █    █    █    █    █")
     print(lineM)
-    print("*    *    *    *    *    *    *    *    *")
-    print("*    *  A *  B *  C *  D *  E *  F *    *")
+    print("█    █    █    █    █    █    █    █    █")
+    print("█    █  A █  B █  C █  D █  E █  F █    █")
     print(line2)    
-    print("*    *    *    *    *    *    *    *    *")
-    print("*****************************************")
+    print("█    █    █    █    █    █    █    █    █")
+    print("█████████████████████████████████████████")
     print(pl1.rjust(41))
 
 # actual game business logic
